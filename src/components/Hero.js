@@ -4,7 +4,7 @@ const Hero = (props) => {
   return (
     <div className="hero">
         <div className='row-flex'>
-            <img src={props.imageUrl} alt=""/>
+            <img src={props.imageUrl} alt="" className='place-img'/>
             <div className='col-flex'>
                 <div className='row-flex'>
                     <img src='' alt=''/>
