@@ -4,13 +4,18 @@ import data from './components/data'
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 function App() {
-  console.log(data);
+  const heros = data.map((item)=>{
+    return(
+    <Hero
+    {...item}
+        />
+    )
+  })
+
   return (
     <div className="App">
      <Navbar/>
-     <Hero 
-          
-          />
+     {heros}
     </div>
   );
 }
