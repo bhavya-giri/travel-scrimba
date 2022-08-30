@@ -4,16 +4,16 @@ const Hero = (props) => {
   return (
     <div className="hero">
         <div className='row-flex'>
-            <img src="" alt=""/>
+            <img src={props.imageUrl} alt=""/>
             <div className='col-flex'>
                 <div className='row-flex'>
                     <img src='' alt=''/>
-                    <p className='country'></p>
-                    <p className='location'></p>
+                    <p className='country'>{props.location}</p>
+                    <p className='location'>{props.googleMapsUrl}</p>
                 </div>
-                <h1 className='place'></h1>
-                <p className='date'></p>
-                <p className='description'></p>
+                <h1 className='place'>{props.title}</h1>
+                <p className='date'>{`${props.startDate} - ${props.endDate}`}</p>
+                <p className='description'>{props.description}</p>
             </div>
         </div>
     </div>
